@@ -1,15 +1,16 @@
 // 1
 const mongoose = require('mongoose');
 // 2
-mongoose.connect( 'mongodb+srv://medalizbaira:7mBB5wom4TMJxbZ3@cluster0.rrzziuw.mongodb.net/?retryWrites=true&w=majority' )
-    .then(
+mongoose.connect( 'mongodb+srv://mohamed:ORu6EGIzS2Lb2BZ5@Hero.oasxjxs.mongodb.net/hero?retryWrites=true&w=majority' )
+    //
+.then(
         ()=>{
             console.log('connected to db !');
         }
     )
     .catch(
-        ()=>{
-            console.log('error in connection');
+        (error)=>{
+            console.log('error in connection'+error);
         }
     )
 
